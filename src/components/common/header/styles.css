@@ -1,0 +1,22 @@
+/* Searchbar */
+.header {
+    background: #cb212f;
+    padding: 10px;
+    display: flex;
+    height: 40px;
+}
+
+.logo {
+    text-decoration: none;
+    font-size: 30px;
+    margin: initial;
+    color: white;
+    font-style: oblique;
+    font-variant-caps: petite-caps;
+    font-weight: 500;
+    width: 50%;
+}
+
+.header form {
+    width: 50%;
+}

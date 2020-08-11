@@ -1,0 +1,82 @@
+.restaurantList {
+    display: flex;
+    justify-content: center;
+}
+
+.restaurantItem {
+    background-color: white;
+    padding: 0 10px 10px 10px;
+    text-align: left;
+    border-radius: 5px;
+    border: solid 1px gainsboro;
+    margin: 10px;
+}
+
+.itemTop {
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.itemTopDetails {
+    margin-left: 15px;
+}
+
+.itemTopDetails .title {
+    color: #CB212E;
+    font-size: 24px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.itemBottom {
+    color: #88959B;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* Review  */
+.reviewContainer {
+    background-color: white;
+    padding: 10px;
+    color: #696969;
+    font-size: 16px;
+    font-weight: 400;
+    border-bottom: solid 1px #E8E8E8;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+}
+
+.user p {
+    color: #000;
+}
+
+.user img{
+    border-radius: 30px;
+}
+
+.username {
+    padding-left: 10px;
+}
+
+.reviewHeader {
+    background: white;
+    border-bottom: solid 1px #b5b5b5;
+    padding: 18px;
+    font-size: 20px;
+    color: #ed586b;
+}
+
+/* Filter Styles */
+.filterContainer {
+    margin-left: 32%;
+    background-color: white;
+    margin-top: 10px;
+    border: solid 1px gainsboro;
+    border-radius: 5px;
+    color: #33373D
+}
+

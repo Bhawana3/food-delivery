@@ -1,0 +1,130 @@
+.search {
+  width: 30rem;
+  text-align: right;
+  position: relative;
+  margin: 2rem auto 0rem auto;
+}
+.search-box {
+  border: 1px solid #e2e2e2;
+  border-radius: 50px 50px 50px 50px;
+  font-size: 16px;
+  width: 100%;
+  transition: width 0.3s;
+}
+.search-box:focus {
+  width: 100%;
+  outline: none;
+}
+.search-btn {
+  position: absolute;
+  top: 40%;
+  opacity: 0.2;
+  background-color: transparent;
+  border: 0;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.search-btn:hover {
+  outline: none;
+  opacity: 0.4;
+  cursor: pointer;
+}
+.search-btn:focus {
+  outline: none;
+  opacity: 0.6;
+}
+
+ul.options {
+  display: block;
+  background-color: white;
+  list-style: none;
+  width: 55%;
+  position: relative;
+  border: 1px solid rgba(0,0,0,0.12);
+  box-shadow: 0 1px 1px rgba(0,0,0,0.12), 0 1px 2px rgba(0,1,0,0.24);
+  margin-top: 37px;
+  margin-left: initial;
+  max-height: 500px;
+  overflow: scroll;
+}
+
+ul.options li {
+  display: block;
+  padding: 10px;
+  margin-left: -2.5rem;
+}
+ul.options li:hover {
+  font-weight: bold;
+  cursor: pointer;
+  background: #f3f3f3;
+}
+
+ul.options li.option-active {
+  font-weight: bold;
+  background: #f3f3f3;
+  width: auto;
+}
+.no-options {
+  color: white;
+}
+
+.input-tag {
+  background: white;
+  border: 1px solid #d6d6d6;
+  border-radius: 3px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 30%;
+  position: absolute;
+  height: 35px;
+}
+
+.input-tag input {
+  border: none;
+  width: 100%;
+}
+
+.input-tag__tags {
+  display: inline-flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.input-tag__tags li {
+  align-items: center;
+  background: #e6ecf0;
+  color: black;
+  display: flex;
+  list-style: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.input-tag__tags li button {
+  align-items: center;
+  appearance: none;
+  background: #333333;
+  border: none;
+  border-radius: 50%;
+  color: white;
+  cursor: pointer;
+  display: inline-flex;
+  font-size: 12px;
+  height: 15px;
+  justify-content: center;
+  line-height: 0;
+  margin-left: 8px;
+  padding: 0;
+  transform: rotate(45deg);
+  width: 15px;
+}
+
+.input-tag__tags li.input-tag__tags__input {
+  background: none;
+  flex-grow: 1;
+  padding: 0;
+  height: auto;
+  width: min-content;
+}
