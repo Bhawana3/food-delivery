@@ -9,7 +9,7 @@ class RestaurantReviews extends Component {
     async componentDidMount() {
         const uri = `https://developers.zomato.com/api/v2.1/reviews?res_id=${this.props.id}`;
         const result = await get(uri);
-        const reviews = result.user_reviews.map(review => review.review);
+        const reviews = (result && result.user_reviews) ? result.user_reviews.map(review => review.review) : [];
         this.setState({ reviews: reviews})
     };
     

@@ -17,7 +17,7 @@ const RestaurantView = () => {
     const getRestaurants = async (latitude, longitude, offset, selectedPage) => {
         const uri = `https://developers.zomato.com/api/v2.1/search?lat=${latitude}&lon=${longitude}&start=${offset}`;
         const result = await get(uri);
-        const res = result.restaurants.map(resp => resp.restaurant);
+        const res = (result && result.restaurants) ?  result.restaurants.map(resp => resp.restaurant): [];
         setRestaurant(res);
         setPage(selectedPage+1);
         setOffset(offset);
